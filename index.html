@@ -1,146 +1,262 @@
-もちろんです。特定行政書士としての信頼性と専門性が伝わり、お客様から相談につながるポートフォリオサイトをご提案します。行政書士サイトでは「専門分野」「実績」「人柄」「相談のしやすさ」が重要です。
+以下は、**特定行政書士向けのシンプルで信頼感のあるポートフォリオサイト**のHTMLです。
+このまま `index.html` として保存すれば表示できます。CSSもHTML内に含めているので、追加ファイルは不要です。
 
-## トップページ
+```html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>特定行政書士 ポートフォリオ</title>
 
-### ヒーロー
-**あなたの法的課題に、迅速・的確・誠実に対応します。**
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-特定行政書士として、行政手続・行政不服申立てをはじめ、各種許認可申請をサポートしています。
-依頼者一人ひとりに寄り添い、安心してご相談いただける事務所を目指しています。
+body{
+    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.8;
+}
 
-【相談する】ボタン
-【業務内容を見る】ボタン
+header{
+    background:#0d47a1;
+    color:white;
+    padding:70px 20px;
+    text-align:center;
+}
 
----
+header h1{
+    font-size:42px;
+}
 
-## プロフィール
+header p{
+    margin-top:15px;
+    font-size:18px;
+}
 
-### ○○ ○○（氏名）
-**特定行政書士**
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
 
-- 日本行政書士会連合会登録番号
-- 所属行政書士会
-- 特定行政書士
-- 所在地
-- 対応エリア
-- オンライン相談対応
+section{
+    background:white;
+    margin:40px 0;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
 
-### ご挨拶
+h2{
+    color:#0d47a1;
+    margin-bottom:20px;
+    border-left:6px solid #0d47a1;
+    padding-left:12px;
+}
 
-「法律をわかりやすく、身近なものとして感じていただけるよう心掛けています。
-許認可申請から行政不服申立てまで、お客様の立場に立って最適な解決策をご提案いたします。」
+.profile{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
 
----
+.photo{
+    width:220px;
+    height:220px;
+    background:#ddd;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    color:#666;
+}
 
-## 業務内容
+.profile-text{
+    flex:1;
+}
 
-### 行政不服申立て
-- 審査請求
-- 再調査請求
-- 再審査請求
-- 手続相談
+ul{
+    padding-left:20px;
+}
 
-### 許認可申請
-- 建設業許可
-- 古物商許可
-- 飲食店営業
-- 産業廃棄物
-- その他各種許認可
+.card{
+    background:#f8fbff;
+    border-left:5px solid #1565c0;
+    padding:20px;
+    margin-bottom:15px;
+}
 
-### 法人支援
-- 株式会社設立
-- 合同会社設立
-- 定款作成
-- 各種契約書
+.contact{
+    text-align:center;
+}
 
-### 相続・遺言
-- 遺言書作成支援
-- 相続手続
-- 各種書類作成
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#1565c0;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:5px;
+    transition:.3s;
+}
 
----
+.button:hover{
+    background:#0d47a1;
+}
 
-## 実績（ポートフォリオ）
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+</style>
 
-### 行政不服申立て
-- 審査請求支援
-- 意見書作成
-- 行政機関との折衝
+</head>
+<body>
 
-### 許認可
-- 建設業許可取得
-- 飲食店営業許可
-- 古物商許可
+<header>
+<h1>特定行政書士</h1>
+<p>法的手続を、より身近に、より確実に。</p>
+</header>
 
-### 書類作成
-- 契約書
-- 内容証明
-- 各種申請書
+<div class="container">
 
-※守秘義務に配慮し、案件内容は匿名化して掲載します。
+<section>
 
----
+<h2>プロフィール</h2>
 
-## 強み
+<div class="profile">
 
-✔ 特定行政書士として行政不服申立てに対応
+<div class="photo">
+プロフィール写真
+</div>
 
-✔ 丁寧で分かりやすい説明
+<div class="profile-text">
 
-✔ スピーディーな対応
+<p>
+はじめまして。特定行政書士として、許認可申請、契約書作成、行政不服申立てなど、
+幅広い行政手続のサポートを行っています。
+</p>
 
-✔ オンライン相談可能
+<p>
+依頼者一人ひとりの状況に寄り添い、
+分かりやすい説明と迅速・丁寧な対応を心掛けています。
+</p>
 
-✔ 初回相談対応（内容に応じて記載）
+</div>
 
----
+</div>
 
-## お客様の声
+</section>
 
-★★★★★
-「難しい行政手続きを分かりやすく説明していただき安心できました。」
+<section>
 
-★★★★★
-「迅速に対応していただき無事に許可を取得できました。」
+<h2>取扱業務</h2>
 
----
+<div class="card">
+<h3>許認可申請</h3>
+<p>建設業、産業廃棄物、古物商、飲食店営業など各種許認可申請</p>
+</div>
 
-## よくある質問
+<div class="card">
+<h3>行政不服申立て</h3>
+<p>特定行政書士として行政庁に対する審査請求・再調査請求などをサポートします。</p>
+</div>
 
-**Q 初回相談は可能ですか？**
+<div class="card">
+<h3>契約書・内容証明</h3>
+<p>各種契約書、示談書、内容証明郵便等の作成支援。</p>
+</div>
 
-はい。お気軽にご相談ください。
+<div class="card">
+<h3>法人・個人事業支援</h3>
+<p>会社設立、各種届出、事業運営に関する法務サポート。</p>
+</div>
 
-**Q 全国対応できますか？**
+</section>
 
-オンライン相談により全国対応可能です。
+<section>
 
-**Q 土日も相談できますか？**
+<h2>経歴・資格</h2>
 
-事前予約により対応可能です。
+<ul>
+<li>行政書士登録</li>
+<li>特定行政書士登録</li>
+<li>○○大学卒業</li>
+<li>行政実務経験 ○年</li>
+</ul>
 
----
+</section>
 
-## お問い合わせ
+<section>
 
-- お名前
-- メールアドレス
-- 電話番号
-- ご相談内容
+<h2>ポートフォリオ・実績</h2>
 
-【送信】
+<ul>
+<li>建設業許可申請</li>
+<li>農地転用許可申請</li>
+<li>各種法人設立支援</li>
+<li>内容証明作成</li>
+<li>行政不服申立代理</li>
+<li>各種契約書作成</li>
+</ul>
 
----
+</section>
 
-## フッター
+<section class="contact">
 
-- プライバシーポリシー
-- 事務所概要
-- アクセス
-- お問い合わせ
-- Copyright © ○○行政書士事務所
+<h2>お問い合わせ</h2>
 
-### デザインイメージ
-信頼感のある行政書士サイトでは、白を基調にネイビーや深いグリーンをアクセントカラーとしたシンプルで見やすいデザインがよく採用されています。また、代表者の写真や相談への導線を目立たせる構成が、安心感や問い合わせにつながりやすい傾向があります。
+<p>
+ご相談・ご依頼はお気軽にお問い合わせください。
+</p>
 
-もし「仕事を受任するための事務所ホームページ」ではなく、「講演・執筆・実績を紹介するポートフォリオサイト」を目指すのであれば、その目的に合わせたデザイン・構成にもできます。さらに、HTML/CSS/JavaScriptでそのまま公開できるレスポンシブ対応サイトとして制作することも可能です。
+<p>
+メール：yourmail@example.com
+</p>
+
+<p>
+TEL：000-0000-0000
+</p>
+
+<a href="mailto:yourmail@example.com" class="button">
+お問い合わせ
+</a>
+
+</section>
+
+</div>
+
+<footer>
+
+© 2026 特定行政書士 Portfolio
+
+</footer>
+
+</body>
+</html>
+```
+
+このHTMLをベースに、さらに以下のような機能を追加すると、よりプロフェッショナルなサイトになります。
+
+- :chatgpt-content-reference{index="0"}
+- :chatgpt-content-reference{index="1"}
+- :chatgpt-content-reference{index="2"}
+- :chatgpt-content-reference{index="3"}
+- :chatgpt-content-reference{index="4"}
+- :chatgpt-content-reference{index="5"}
+- :chatgpt-content-reference{index="6"}
+- :chatgpt-content-reference{index="7"}
+- :chatgpt-content-reference{index="8"}
+- **:chatgpt-content-reference{index="9"}**（活動地域に合わせて調整可能）
+
+これらを追加すると、事務所サイトとしてそのまま公開できるレベルに近づきます。
